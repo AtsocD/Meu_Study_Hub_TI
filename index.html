@@ -2,10 +2,218 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Study Hub - Ciência da Computação</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Hub | Ciência da Computação</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-color: #c9d1d9;
+            --text-heading: #f0f6fc;
+            --accent-color: #58a6ff;
+            --accent-hover: #1f6feb;
+            --badge-bg: #21262d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: var(--text-heading);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.05rem;
+            color: #8b949e;
+            max-width: 650px;
+            margin: 0 auto 20px auto;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: var(--text-heading);
+            font-size: 1.4rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-color);
+        }
+
+        .card h3 {
+            color: var(--text-heading);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #8b949e;
+        }
+
+        .list-disciplinas {
+            list-style: none;
+        }
+
+        .list-disciplinas li {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 12px 18px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .badge {
+            background-color: var(--badge-bg);
+            color: var(--accent-color);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            border: 1px solid var(--border-color);
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            color: #8b949e;
+            font-size: 0.85rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Study Hub - Repositório de Projetos</h1>
-    <p>Bem-vindo ao repositório de consolidação e documentação de projetos acadêmicos e profissionais.</p>
+
+    <div class="container">
+        <header>
+            <h1>🚀 Study Hub - Ciência da Computação</h1>
+            <p>Repositório de consolidação, organização e documentação de projetos acadêmicos e profissionais.</p>
+            <div class="btn-group">
+                <a href="https://github.com/AtsocD/Meu_Study_Hub_TI" target="_blank" class="btn">Repositório no GitHub</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>📁 Arquitetura do Repositório</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>01. Apresentação e Perfil</h3>
+                    <p>Biografia acadêmica, objetivos profissionais e apresentação geral.</p>
+                </div>
+                <div class="card">
+                    <h3>02. Disciplinas Atuais</h3>
+                    <p>Atividades, códigos, documentações e entregas do semestre atual.</p>
+                </div>
+                <div class="card">
+                    <h3>03. Projetos e Certificados</h3>
+                    <p>Projetos pessoais e certificações obtidas durante a graduação.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>📚 Disciplinas do Semestre</h2>
+            <ul class="list-disciplinas">
+                <li>
+                    <span><strong>Bootcamp I</strong> — Estruturação e Versionamento</span>
+                    <span class="badge">Em andamento</span>
+                </li>
+                <li>
+                    <span><strong>Projeto Integrador IV</strong> — Arquitetura de Software</span>
+                    <span class="badge">Em andamento</span>
+                </li>
+                <li>
+                    <span><strong>Segurança Digital</strong> — Criptografia e Vulnerabilidades</span>
+                    <span class="badge">Em andamento</span>
+                </li>
+                <li>
+                    <span><strong>Teste e Qualidade de Software</strong> — Automação e Qualidade</span>
+                    <span class="badge">Em andamento</span>
+                </li>
+                <li>
+                    <span><strong>Sistemas em Tempo Real e Embarcados</strong> — Microcontroladores</span>
+                    <span class="badge">Em andamento</span>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Study Hub • Ciência da Computação</p>
+        </footer>
+    </div>
+
 </body>
 </html>
