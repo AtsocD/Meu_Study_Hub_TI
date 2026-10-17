@@ -3,7 +3,7 @@
 Repositório estratégico desenvolvido no último semestre para consolidar, organizar e documentar os conhecimentos adquiridos na graduação[cite: 10].
 
 ## 🔗 Links Rápidos
-* **GitHub Pages:** https://seu-usuario.github.io/Meu_Study_Hub_TI/[cite: 3]
+* **GitHub Pages:** https://atsocd.github.io/Meu_Study_Hub_TI/[cite: 3]
 
 ## 📁 Estrutura de Diretórios[cite: 11]
 * `01_Apresentacao_e_Perfil/`: Apresentação acadêmica e profissional[cite: 11].
