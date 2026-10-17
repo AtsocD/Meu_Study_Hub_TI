@@ -1,2 +1,2 @@
 # Sistemas em Tempo Real e Embarcados
-Projetos para microcontroladores e análise de restrições temporais[cite: 12].
+Projetos para microcontroladores e análise de restrições temporais.
